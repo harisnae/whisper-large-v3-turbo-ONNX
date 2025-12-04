@@ -3,7 +3,7 @@
 [![Open In Colab][colab-badge]][colab-notebook]  
 
 [colab-badge]: https://colab.research.google.com/assets/colab-badge.svg
-[colab-notebook]: https://colab.research.google.com/github/harisnae/whisper-large-v3-turbo-ONNX/blob/main/whisper_large_v3_turbo_demo.ipynb
+[colab-notebook]: https://colab.research.google.com/github/harisnae/whisper-large-v3-turbo-ONNX/blob/main/whisper_large_v3_turbo_ONNX.ipynb
 [license-badge]: https://img.shields.io/github/license/harisnae/whisper-large-v3-turbo-ONNX
 [license]: https://github.com/harisnae/whisper-large-v3-turbo-ONNX/blob/main/LICENSE
 [stars-badge]: https://img.shields.io/github/stars/harisnae/whisper-large-v3-turbo-ONNX?style=social
