@@ -1,0 +1,45 @@
+# -------------------------------------------------
+# Core 🤗 libraries (used directly in the notebook)
+# -------------------------------------------------
+transformers          # WhisperProcessor, pipeline, GenerationConfig, …
+datasets              # required by huggingface_hub internals
+accelerate            # optional – multi‑GPU handling
+huggingface_hub       # snapshot_download, repo handling
+
+# -------------------------------------------------
+# Optimum + ONNX Runtime (CPU wheel – the notebook will later install the GPU wheel if needed)
+# -------------------------------------------------
+optimum[onnxruntime]  # Optimum wrapper + the CPU ONNX Runtime wheel
+
+# If you want GPU acceleration you can install the GPU build manually:
+#   pip install onnxruntime-gpu
+# (the notebook installs the correct build automatically, but listing it here
+#  makes the file self‑contained for offline installs.)
+
+# -------------------------------------------------
+# Audio I/O & signal‑processing
+# -------------------------------------------------
+soundfile            # reading/writing wav, flac, etc.
+librosa               # resampling, mel‑spectrogram extraction
+ffmpeg-python          # thin Python wrapper around the system ffmpeg binary
+tqdm                  # progress‑bars used by the notebook
+
+# -------------------------------------------------
+# PyTorch (only needed for the CUDA‑availability check)
+# -------------------------------------------------
+torch                  # CPU‑only or GPU‑enabled builds – pip will pull the right wheel
+
+# -------------------------------------------------
+# Optional – pin exact versions (uncomment & replace with numbers if you need a reproducible freeze)
+# -------------------------------------------------
+# transformers==4.44.0
+# datasets==2.20.0
+# accelerate==0.33.0
+# huggingface_hub==0.24.0
+# optimum==1.22.0
+# onnxruntime==1.18.1          # or onnxruntime‑gpu==1.18.1 for GPU
+# soundfile==0.12.1
+# librosa==0.10.2
+# ffmpeg-python==0.2.0
+# tqdm==4.66.5
+# torch==2.4.0
