@@ -1,0 +1,24 @@
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment folders
+venv/
+.env/
+.venv/
+.env/
+
+# Hugging‑Face cache (large files you don’t want in the repo)
+hf_cache/
+*.onnx_data   # external weight files – not needed to be stored in the repo
+
+# OS‑specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.log
